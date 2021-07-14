@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>電卓</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" id="display" value="0" maxlength='8' readonly></td>
+        </tr>
+        <tr>
+            <td><button value="AC" onClick="calculator('AC')">AC</button></td>
+            <td><button value="DE" onClick="calculator('DE')">DE</button></td>
+            <td><button value="%" onClick="calculator('%')">%</button></td>
+            <td><button value="/" onClick="calculator('/')">÷</button></td>
+        </tr>
+        <tr>
+            <td><button value="7" onClick="calculator('7')">7</button></td>
+            <td><button value="8" onClick="calculator('8')">8</button></td>
+            <td><button value="9" onClick="calculator('9')">9</button></td>
+            <td><button value="*" onClick="calculator('*')">×</button></td>
+        </tr>
+        <tr>
+            <td><button value="4" onClick="calculator('4')">4</button></td>
+            <td><button value="5" onClick="calculator('5')">5</button></td>
+            <td><button value="6" onClick="calculator('6')">6</button></td>
+            <td><button value="-" onClick="calculator('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button value="1" onClick="calculator('1')">1</button></td>
+            <td><button value="2" onClick="calculator('2')">2</button></td>
+            <td><button value="3" onClick="calculator('3')">3</button></td>
+            <td rowspan="2"><button value="+" onClick="calculator('+')" class="two">+</button></td>
+        </tr>
+        <tr>
+            <td><button value="0" onClick="calculator('0')">0</button></td>
+            <td><button value="." onClick="calculator('.')">.</button></td>
+            <td><button value="=" onClick="calculator('=')">=</button></td>
+        </tr>
+    </table>
+</body>
+</html>

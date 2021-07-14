@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+table{
+    background-color: #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    border: solid 3px #000;
+}
+
+input{
+    width: 305px;
+    height: 80px;
+    font-size: 45px;
+    border: solid 3px #000;
+    border-radius: 5px;
+    text-align: right;
+}
+
+button{
+    width: 75px;
+    height: 80px;
+    background-color: skyblue;
+    border: solid 3px #000;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.two{
+    height: 164px;
+}
