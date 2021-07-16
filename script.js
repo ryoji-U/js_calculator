@@ -36,8 +36,7 @@ var app = new Vue({
                 
                 //=入力時
                 case '=':
-                    //display.value  = (new Function('return '+value)())
-                    display.value  = Math.floor(new Function('return '+value)() * 1000000)/1000000
+                    display.value  = Math.round(new Function('return '+value)() * 1000000)/1000000
                     break;
             }
         

@@ -8,20 +8,20 @@
     <title>電卓</title>
 </head>
 <body>
-        <table id="app">
-            <tr>
-                <td colspan="4"><input type="text" v-model="display" id="display"></td>
-            </tr>
-            <tr v-for="row in items">
-                <td v-for="item in row" v-if="item != '+'">
-                    <button v-on:click="calculator(item)">{{ item }}</button>
-                </td>
-                <td v-for="item in row" v-if="item == '+'" rowspan="2">
-                    <button v-on:click="calculator(item)" class="two">{{ item }}</button>
-                </td>
-            </tr>
-        </table>
+    <table id="app">
+        <tr>
+            <td colspan="4"><input type="text" v-model="display" id="display"></td>
+        </tr>
+        <tr v-for="row in items">
+            <td v-for="item in row" v-if="item !== '+'">
+                <button v-on:click="calculator(item)">{{ item }}</button>
+            </td>
+            <td v-for="item in row" v-if="item === '+'" rowspan="2">
+                <button v-on:click="calculator(item)" class="two">{{ item }}</button>
+            </td>
+        </tr>
+    </table>
 
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
